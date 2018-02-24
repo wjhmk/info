@@ -4,8 +4,18 @@
   <%= devise_error_messages! %>
   
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name,"名前" %><br />
   　<%= f.text_field :name, autofocus: true, autocomplete: "name" %><br />
+  </div>
+  
+  <div class="field">
+    <%= f.label :my_url,"あなたサイト・ブログの名前" %><br />
+    <%= f.text_field :my_url, autofocus: true %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :url_name,"あなたサイト・ブログのURL" %><br />
+    <%= f.text_field :url_name, autofocus: true %>
   </div>
   
   
