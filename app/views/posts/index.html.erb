@@ -1,3 +1,4 @@
+<h1>情報商材一覧</h1>
 <% @posts.each do |post| %>
 	<div class="post_wrapper">
 		<h2 class="title"><%= link_to post.title, post %></h2>
@@ -6,5 +7,5 @@
 <% end %>
 
 <% if user_signed_in? %>
-<h1>---<%= link_to 'レビューを投稿する', new_post_path %>----<h1>
+<p>---<%= link_to 'レビューを投稿する', new_post_path %>----<h>
 <% end %>

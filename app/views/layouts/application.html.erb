@@ -12,8 +12,9 @@
     
      <header>
             <nav>
+              　<%= link_to 'ホーム', root_path %>
                 <% if user_signed_in? %>
-                
+                <%= link_to 'レビューを投稿する', new_post_path %>
                 <%= link_to 'アカウント編集', edit_user_registration_path %>
                 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
             <% else %>
